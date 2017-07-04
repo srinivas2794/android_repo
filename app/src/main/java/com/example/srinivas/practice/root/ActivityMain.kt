@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import com.example.srinivas.practice.R
+import com.example.srinivas.practice.recycler_view.ActivityRecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -16,7 +17,7 @@ class ActivityMain : AppCompatActivity() {
     internal var projectRoots = ArrayList<Class<out AppCompatActivity>>()
 
     init {
-        projectRoots.add(this::class.java)
+        projectRoots.add(ActivityRecyclerView::class.java)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
