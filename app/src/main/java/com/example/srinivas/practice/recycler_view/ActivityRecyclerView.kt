@@ -24,7 +24,7 @@ class ActivityRecyclerView : AppCompatActivity() {
         recycler_view.layoutManager = mLinearLayoutManager
         recycler_view.adapter = mRecyclerAdapter
 
-        //mocking api. Will be replaced with actual content
+        //mocking api. Will be replaced with actual api
         val thread = Thread {
             (1..100).forEach {
                 Thread.sleep(100)
